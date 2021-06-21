@@ -80,6 +80,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "firebase_core",
+      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///E:/flutter/flutter_windows/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -165,7 +183,7 @@
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.1",
+      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -189,15 +207,21 @@
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.0.0",
+      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.1"
     },
     {
       "name": "process",
       "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///E:/flutter/flutter_windows/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "sky_engine",
@@ -290,7 +314,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-06-12T07:16:51.737204Z",
+  "generated": "2021-06-20T08:20:23.460376Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

@@ -1,4 +1,7 @@
-#Thu Jun 17 13:09:12 IST 2021
+#Sun Jun 20 16:14:11 IST 2021
 base.0=H\:\\Flutter projects\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=H\:\\Flutter projects\\flutter_application_1\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex

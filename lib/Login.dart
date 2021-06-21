@@ -11,13 +11,25 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   String name = "";
   bool change = false;
+  bool change2 = false;
   final _formkey = GlobalKey<FormState>();
+
+  movetoS(BuildContext context) async {
+    change2 = true;
+    setState(() {});
+    await Future.delayed(Duration(seconds: 2));
+    await Navigator.pushNamed(context, Myroutes.Signup);
+    setState(() {
+      change2 = false;
+    });
+  }
 
   movetoHome(BuildContext context) async {
     if (_formkey.currentState.validate()) {
       change = true;
       setState(() {});
       await Future.delayed(Duration(seconds: 2));
+
       await Navigator.pushNamed(context, Myroutes.Home);
       setState(() {
         change = false;
@@ -107,41 +119,73 @@ class _LoginState extends State<Login> {
                   SizedBox(
                     height: 35,
                   ),
-                  Material(
-                    child: InkWell(
-                      onTap: () => movetoHome(context),
-                      child: AnimatedContainer(
-                        duration: Duration(seconds: 1),
-                        height: 40,
-                        width: change ? 40 : 100,
-                        alignment: Alignment.center,
-                        child: change
-                            ? Icon(
-                                Icons.done,
-                                color: Colors.white,
-                              )
-                            : Text(
-                                "Login",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                        // color: Colors.amber,
-                        decoration: BoxDecoration(
-                          color: Colors.amber,
-                          borderRadius: BorderRadius.circular(change ? 70 : 10),
+                  Column(
+                    children: [
+                      Material(
+                        child: InkWell(
+                          onTap: () => movetoHome(context),
+                          child: AnimatedContainer(
+                            //  margin: EdgeInsetsGeometry.lerp(),
+                            duration: Duration(seconds: 1),
+                            height: 40,
+                            width: change ? 40 : 100,
+                            alignment: Alignment.center,
+                            child: change
+                                ? Icon(
+                                    Icons.done_all,
+                                    color: Colors.white,
+                                  )
+                                : Text(
+                                    "Login",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                            //   padding: EdgeInsets.all(100),
+                            // color: Colors.amber,
+                            decoration: BoxDecoration(
+                              color: Colors.amber,
+                              borderRadius:
+                                  BorderRadius.circular(change ? 70 : 10),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Material(
+                        child: InkWell(
+                          onTap: () => movetoS(context),
+                          child: AnimatedContainer(
+                            duration: Duration(seconds: 1),
+                            height: 40,
+                            width: change2 ? 40 : 100,
+                            alignment: Alignment.center,
+                            child: change2
+                                ? Icon(
+                                    Icons.airplay_rounded,
+                                    color: Colors.white,
+                                  )
+                                : Text(
+                                    "SignUp",
+                                    style: TextStyle(
+                                      color: Colors.amber,
+                                    ),
+                                  ),
+                            // color: Colors.amber,
+                            decoration: BoxDecoration(
+                              color: change2
+                                  ? Colors.deepPurpleAccent
+                                  : Colors.white,
+                              borderRadius:
+                                  BorderRadius.circular(change2 ? 70 : 10),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  /*  ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, Myroutes.Home);
-                      },
-                      child: Text(
-                        "Login",
-                        style: TextStyle(color: Colors.white),
-                      )),*/
                   SizedBox(
                     height: 20,
                   )
